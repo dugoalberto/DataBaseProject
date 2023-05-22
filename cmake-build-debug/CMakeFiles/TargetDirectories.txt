@@ -1,3 +1,3 @@
-/Users/albertodugo/Desktop/provaLab5_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/albertodugo/Desktop/provaLab5_1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/albertodugo/Desktop/provaLab5_1/cmake-build-debug/CMakeFiles/provaLab5_1.dir
+/Users/albertodugo/Desktop/progettoBasiDiDati/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/albertodugo/Desktop/progettoBasiDiDati/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/albertodugo/Desktop/progettoBasiDiDati/cmake-build-debug/CMakeFiles/provaLab5_1.dir

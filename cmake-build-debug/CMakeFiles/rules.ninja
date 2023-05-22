@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__provaLab5_1_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/albertodugo/Desktop/provaLab5_1 -B/Users/albertodugo/Desktop/provaLab5_1/cmake-build-debug
+  command = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/albertodugo/Desktop/progettoBasiDiDati -B/Users/albertodugo/Desktop/progettoBasiDiDati/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
