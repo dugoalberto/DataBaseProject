@@ -1,12 +1,9 @@
 //
 // Created by Alberto Dugo on 22/05/23.
 //
-#include <libpq-fe.h>
 #include <iostream>
-
-//#include "dependencies/include/libpq-fe.h"
 using namespace std;
-#include <libpq-fe.h>
+#include "dependencies/include/libpq-fe.h"
 
 int main() {
     const char* conninfo = "host=localhost port=5432 dbname=postgres user=root password=root";
@@ -17,19 +14,6 @@ int main() {
         printf("Connection to database failed: %s\n", PQerrorMessage(conn));
         PQfinish(conn);
         return 1;
-    }
-
-    for (int i = 0; i < 100; ++i) {
-        char query[100];
-        snprintf(query, sizeof(query), "INSERT INTO hubs(prova) values (%d)", i);
-        res = PQexec(conn, query);
-        if (PQresultStatus(res) != PGRES_COMMAND_OK) {
-            printf("Error executing INSERT query: %s\n", PQerrorMessage(conn));
-            PQclear(res);
-            PQfinish(conn);
-            return 1;
-        }
-        PQclear(res);
     }
 
     res = PQexec(conn, "SELECT * FROM hubs");
