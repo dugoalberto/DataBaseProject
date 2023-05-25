@@ -16,25 +16,9 @@ int main() {
         return 1;
     }
 
-    res = PQexec(conn, "SELECT * FROM hubs");
-    if (PQresultStatus(res) != PGRES_TUPLES_OK) {
-        printf("Error executing SELECT query: %s\n", PQerrorMessage(conn));
-        PQclear(res);
-        PQfinish(conn);
-        return 1;
-    }
-
-    int rows = PQntuples(res);
-    int cols = PQnfields(res);
-
-    for (int i = 0; i < rows; ++i) {
-        for (int j = 0; j < cols; ++j) {
-            printf("%s\t", PQgetvalue(res, i, j));
-        }
-        printf("\n");
-    }
-
-    PQclear(res);
-    PQfinish(conn);
+    // TODO almeno 7 query interessanti
+    // TODO quant'è il valore medio delle spedizioni assicurate
+    // TODO QUERY sul vincolo -> tipo quelle dell'esame
+    // TODO almeno una query parametrica
     return 0;
 }

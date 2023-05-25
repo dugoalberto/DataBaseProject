@@ -1,0 +1,77 @@
+create table public."Indirizzo"
+(
+    regione       varchar not null,
+    città         varchar not null,
+    via           varchar not null,
+    provincia     varchar not null,
+    numero_civico integer not null,
+    constraint "Indirizzo_pk"
+        primary key (regione, via, numero_civico, città, provincia)
+);
+
+create table public."Filiale"
+(
+    id            integer not null
+        constraint "Filiale_pk"
+            primary key,
+    regione       varchar,
+    città         varchar,
+    via           varchar,
+    provincia     varchar,
+    numero_civico integer,
+    constraint "FIliale_Indirizzo_fk"
+        foreign key (città, provincia, regione, via, numero_civico) references public."Indirizzo" (città, provincia, regione, via, numero_civico)
+            on update cascade
+);
+
+create table public."User"
+(
+    codice_fiscale  varchar(16) not null
+        constraint "User_pk"
+            primary key
+        constraint check_codice_fiscale
+            check ((codice_fiscale)::text ~ similar_to_escape('^[A-Z]{6}\d{2}[A-Z]\d{2}[A-Z]\d{3}[A-Z]$'::text)),
+    email           varchar
+        constraint check_email
+            check ((email)::text ~ similar_to_escape('^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'::text)),
+    nome            varchar     not null,
+    cognome         varchar     not null,
+    numero_telefono varchar(10)
+);
+
+create table public."Pacco"
+(
+    id     integer          not null
+        constraint "Pacco_pk"
+            primary key,
+    valore double precision not null,
+    volume double precision not null,
+    peso   double precision not null
+);
+
+create table public."Servizi"
+(
+    id          integer          not null
+        constraint "Servizi_pk"
+            primary key,
+    nome        varchar          not null,
+    descrizione varchar,
+    costo       double precision not null
+);
+
+create table public."Spedizione_Premium"
+(
+    tracking     integer     not null
+        constraint "Spedizione_Premium_pk"
+            primary key,
+    mittente     varchar(16) not null
+        constraint "Spedizione_Premium_User_codice_fiscale_fk"
+            references public."User",
+    destinatario varchar(16)
+        constraint "Spedizione_Premium_User_codice_fiscale_fk2"
+            references public."User",
+    pacco        integer
+        constraint "Spedizione_Premium_Pacco_id_fk"
+            references public."Pacco"
+);
+
