@@ -1,0 +1,12 @@
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (94, 9, 29);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (112, 10, 6);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (235, 11, 23);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (100, 12, 1);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (36, 13, 14);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (102, 14, 9);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (171, 15, 12);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (151, 16, 18);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (279, 17, 3);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (281, 18, 1);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (275, 19, 1);
+INSERT INTO public."Assicurazione_Parziale" (id, tracking, percentuale_assicurata) VALUES (30, 20, 17);
