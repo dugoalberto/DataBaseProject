@@ -65,8 +65,43 @@ static void createNumeroServiziPerOgniTrackingView() {
     // Chiusura della connessione al database
     PQfinish(conn);
 }
+static void p2(){
+    int param;
+    cout << "Inserire prezzo soglia: ";
+    cin >> param;
+
+    const char* conninfo = "host=localhost port=5432 dbname=postgres user=root password=root";
+
+    // Connessione al database
+    PGconn *conn = PQconnectdb(conninfo);
+
+    // Verifica dello stato della connessione
+    if (PQstatus(conn) != CONNECTION_OK) {
+        std::cout << "Connessione al database fallita: " << PQerrorMessage(conn) << std::endl;
+        PQfinish(conn);
+        return;
+    }
+    std::string query = "SELECT \"Spedizione_Economica\".tracking, \"Spedizione_Economica\".costo, SES.nome_servizio, SES.costo "
+                        "FROM \"Spedizione_Economica\" "
+                        "JOIN \"Spedizione_Economica_Servizi\" SES ON \"Spedizione_Economica\".tracking = SES.tracking "
+                        "WHERE \"Spedizione_Economica\".costo >" + std::to_string(param) + " "
+                        "ORDER BY tracking ASC;";
+    PGresult *result = PQprepare(conn,"query_spedizioneEconomica", query.c_str(), 1, NULL);
+
+
+    checkResults(result, conn);
+    int numRows = PQntuples(result);
+    if (numRows > 0) {
+        double averageCost = std::stod(PQgetvalue(result, 0, 0));
+        std::cout << "Media dei costi: " << averageCost << std::endl;
+    }
+
+    PQclear(result);
+
+}
 int main() {
     createNumeroServiziPerOgniTrackingView();
+    p2();
 
     return 0;
 }
