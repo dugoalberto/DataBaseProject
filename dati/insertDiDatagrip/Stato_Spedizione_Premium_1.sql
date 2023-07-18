@@ -1,0 +1,14 @@
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (1, 1, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (2, 2, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (3, 3, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (4, 4, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (5, 5, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (6, 6, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (7, 7, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (8, 8, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (9, 9, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (10, 10, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (11, 11, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (12, 12, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (13, 13, '2023-05-30');
+INSERT INTO public."Stato_Spedizione_Premium" (tracking, filiale, data) VALUES (8, 9, '2023-05-30');

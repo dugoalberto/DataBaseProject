@@ -1,0 +1,15 @@
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (1, 'FastTrack Express', 9, 'ddaffewfew');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (10, 'RapidConnect', 17.2, 'Oth spon disrupt of anterior cruciate ligament of right knee');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (14, 'ExpressLink', 9, 'Acquired absence of unspecified shoulder');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (23, 'QuickMove', 10, 'Unsp inj intrinsic musc/fasc/tend r mid finger at wrs/hnd lv');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (25, 'RapidLogistics', 3.2, 'Puncture wound with foreign body of left wrist');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (29, 'TurboTransport', 16.9, 'Wear of artic bearing surface of internal prosth l hip jt');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (41, 'TurboDelivery', 5.9, 'Medial dislocation of left ulnohumeral joint');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (43, 'FastLaneTransit', 12, 'Other specified disorders of synovium and tendon');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (45, 'SwiftFreight', 4.8, 'Other hypertrophic disorders of the skin');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (46, 'InstantConnect', 9.8, 'Multiple endocrine neoplasia [MEN] syndromes');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (50, 'ExpressDispatch', 14.3, 'Separation of retinal layers');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (51, 'QuickShip', 6.4, 'Central European tick-borne encephalitis');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (52, 'SpeedyRoute', 10.8, 'Unspecified subluxation of left sternoclavicular joint');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (53, 'RapidLogistics', 1.1, 'Unspecified acquired deformity of forearm');
+INSERT INTO public."Servizi" (id, nome, costo, descrizione) VALUES (54, 'SwiftDelivery', 10.8, 'Other recurrent atlantoaxial dislocation');
