@@ -70,7 +70,7 @@ static void p2(){
     cout << "Inserire prezzo soglia: ";
     cin >> param;
 
-    const char* conninfo = "host=localhost port=5432 dbname=postgres user=root password=root";
+    const char* conninfo = "host=localhost port=5432 dbname=progettobasi user=root password=root";
 
     // Connessione al database
     PGconn *conn = PQconnectdb(conninfo);
@@ -84,7 +84,7 @@ static void p2(){
     std::string query = "SELECT \"Spedizione_Economica\".tracking, \"Spedizione_Economica\".costo, SES.nome_servizio, SES.costo "
                         "FROM \"Spedizione_Economica\" "
                         "JOIN \"Spedizione_Economica_Servizi\" SES ON \"Spedizione_Economica\".tracking = SES.tracking "
-                        "WHERE \"Spedizione_Economica\".costo >" + std::to_string(param) + " "
+                        "WHERE \"Spedizione_Economica\".costo >" + std::to_string(param) + " f"
                         "ORDER BY tracking ASC;";
     PGresult *result = PQprepare(conn,"query_spedizioneEconomica", query.c_str(), 1, NULL);
 
