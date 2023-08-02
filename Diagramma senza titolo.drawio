@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-02T14:27:11.844Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15" etag="1y3kbV_eJsmbxP7dzPOE" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-02T14:49:52.361Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15" etag="Nesby4QMSRSsYsq0iiWX" version="21.6.6" type="github">
   <diagram id="qCwLOHGnyr0OUw6N842j" name="Page-1">
-    <mxGraphModel dx="4068" dy="1944" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3590" dy="1743" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -155,7 +155,7 @@
             <mxPoint x="1" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OSBupg09hYk3lAK9ZTMU-68" value="avere" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="OSBupg09hYk3lAK9ZTMU-68" value="fornita" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-202" y="89" width="107" height="80" as="geometry" />
         </mxCell>
         <mxCell id="OSBupg09hYk3lAK9ZTMU-71" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;endArrow=baseDash;endFill=0;" parent="1" source="OSBupg09hYk3lAK9ZTMU-69" target="OSBupg09hYk3lAK9ZTMU-67" edge="1">
@@ -166,7 +166,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OSBupg09hYk3lAK9ZTMU-69" value="avere" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="OSBupg09hYk3lAK9ZTMU-69" value="fornita" style="rhombus;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="161" y="80" width="103" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3wObFv7TXstixgiTJkf9-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;shape=flexArrow;fillColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="OSBupg09hYk3lAK9ZTMU-2" target="TD3n4oKh4dUSbVoa6w9F-2" edge="1">
