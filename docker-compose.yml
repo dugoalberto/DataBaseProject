@@ -11,7 +11,7 @@ services:
       POSTGRES_PASSWORD: root
       POSTGRES_DB: test_db
     ports:
-      - "5432:5432"
+      - "5430:5430"
   pgadmin:
     container_name: pgadmin4_container_progetto
     image: dpage/pgadmin4
